@@ -472,8 +472,8 @@ export default class CopyUrlInPreview extends Plugin {
 	onImageMouseUp(event: MouseEvent): void {
 		const middleButtonNumber = 1;
 		if (
-			event.button == middleButtonNumber &&
-			this.settings.middleClickNewTab
+			event.button == middleButtonNumber
+			// this.settings.middleClickNewTab
 		) {
 			const imageElement = imageElementFromMouseEvent(event);
 			if (!imageElement) return;
